@@ -3,7 +3,23 @@ import 'package:open_apps_settings/open_apps_settings.dart';
 import 'package:open_apps_settings/settings_enum.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyWidget());
+}
+
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'test',
+      home: Scaffold(
+        body: Text(
+          'Hola',
+        ),
+      ),
+    );
+  }
 }
 
 class MyApp extends StatefulWidget {
