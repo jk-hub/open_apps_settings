@@ -52,4 +52,5 @@ enum SettingsCode {
   NFC,
   SOUND,
   NOTIFICATION,
+  Music,
 }
