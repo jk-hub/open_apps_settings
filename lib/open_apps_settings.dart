@@ -26,7 +26,7 @@ class OpenAppsSettings {
       code = code.substring(13);
       String res = await _channel
           .invokeMethod("openSettings", {"setting_code": code.toLowerCase()});
-      if (res != null && res.length > 0) {
+      if (res.length > 0) {
         if (onCompletion != null) onCompletion();
       }
     } on PlatformException catch (e) {
